@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Digital CV and portfolio of Ganesh Mahendra Pathak — AI Consultant, techno-functional business analyst and analytics professional." />
+  <meta name="theme-color" content="#090d18" />
+  <title>Ganesh Mahendra Pathak | Digital CV</title>
+  <style>
+    :root{--bg:#090d18;--panel:rgba(17,25,43,.76);--panel2:#111a2b;--text:#eef3ff;--muted:#9aa8c2;--line:rgba(164,185,224,.16);--cyan:#64e4dc;--blue:#7c9cff;--max:1120px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 5%,#18254a 0,transparent 30%),radial-gradient(circle at 10% 35%,#102b38 0,transparent 26%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(9,13,24,.72);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:800;letter-spacing:.04em}.brand span{color:var(--cyan)}.navlinks{display:flex;gap:25px;color:var(--muted);font-size:.9rem}.navlinks a:hover{color:var(--cyan)}.menu{display:none;background:none;border:1px solid var(--line);color:var(--text);padding:7px 11px;border-radius:9px}
+    #particles{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}.hero{min-height:760px;display:flex;align-items:center;position:relative;overflow:hidden;padding:130px 0 90px}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,13,24,.96),rgba(9,13,24,.5) 65%,rgba(9,13,24,.2));pointer-events:none}.hero-content{position:relative;z-index:1;max-width:800px}.eyebrow{color:var(--cyan);font-size:.78rem;font-weight:800;letter-spacing:.2em;text-transform:uppercase}.hero h1{font-size:clamp(2.7rem,7vw,5.8rem);line-height:1.02;letter-spacing:-.055em;margin:18px 0}.hero h1 span{background:linear-gradient(100deg,var(--cyan),#91a9ff 70%);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{max-width:680px;color:#bdc8dc;font-size:1.12rem}.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}.btn{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border-radius:12px;font-weight:750;border:1px solid var(--line);transition:.2s}.btn.primary{background:linear-gradient(110deg,#58dcd3,#8aa5ff);color:#07111c;border:0}.btn:hover{transform:translateY(-3px);box-shadow:0 12px 35px #0005}.hero-meta{display:flex;gap:25px;flex-wrap:wrap;margin-top:36px;color:var(--muted);font-size:.9rem}.hero-meta b{color:var(--text);font-weight:650}
+    section{padding:88px 0;scroll-margin-top:70px}.section-head{margin-bottom:34px}.kicker{color:var(--cyan);font-size:.75rem;letter-spacing:.18em;text-transform:uppercase;font-weight:800}.section-head h2{font-size:clamp(2rem,4vw,3rem);letter-spacing:-.04em;margin:7px 0}.section-head p{color:var(--muted);max-width:680px;margin:0}.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:25px;box-shadow:0 18px 55px #0002;backdrop-filter:blur(12px)}.about-main{grid-column:span 7}.about-side{grid-column:span 5}.card h3{margin:0 0 10px;font-size:1.15rem}.card p{color:var(--muted);margin:0}.statrow{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:20px}.stat{padding:15px;border-radius:14px;background:#ffffff08;border:1px solid var(--line)}.stat strong{display:block;font-size:1.35rem;color:var(--cyan)}.stat span{font-size:.8rem;color:var(--muted)}
+    .timeline{position:relative;margin-left:8px}.timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--cyan),#7185ff,transparent)}.job{position:relative;padding:0 0 28px 36px}.job:before{content:"";position:absolute;left:1px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--cyan);box-shadow:0 0 18px #64e4dc88}.jobtop{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.job h3{margin:0;font-size:1.12rem}.company{color:var(--cyan);font-weight:650}.date{color:var(--muted);font-size:.86rem}.job p{color:var(--muted);margin:7px 0 0}.taglist{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}.tag{font-size:.82rem;color:#cbd7ee;background:#ffffff09;border:1px solid var(--line);padding:7px 11px;border-radius:999px}
+    .skillgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.skillbox h3{color:var(--cyan)}.skillbox p{font-size:.92rem}.project{grid-column:span 6;position:relative;overflow:hidden;min-height:190px}.project:after{content:"";position:absolute;width:150px;height:150px;border-radius:50%;background:#64e4dc12;right:-45px;bottom:-65px}.project .number{font-size:.75rem;color:var(--cyan);letter-spacing:.15em;font-weight:800}.project h3{font-size:1.25rem;margin:10px 0}.project p{max-width:520px}.education{grid-column:span 6}.eduitem{padding:16px 0;border-bottom:1px solid var(--line)}.eduitem:last-child{border:0;padding-bottom:0}.eduitem strong{display:block}.eduitem span{color:var(--muted);font-size:.9rem}
+    .contact{background:linear-gradient(120deg,#13243a,#111a2d);border:1px solid var(--line);border-radius:25px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact p{color:var(--muted);margin:6px 0 0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.footer{padding:28px 0;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}.footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}.reveal.visible{opacity:1;transform:none}
+    @media(max-width:760px){.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#0d1423;padding:18px 22px;flex-direction:column;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{min-height:680px}.about-main,.about-side,.project,.education{grid-column:span 12}.skillgrid{grid-template-columns:1fr}.contact{display:block}.contact-links{margin-top:22px}.wrap{width:min(var(--max),calc(100% - 30px))}section{padding:68px 0}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="wrap nav">
+    <a class="brand" href="#home">GP<span>.</span></a>
+    <nav class="navlinks" id="navlinks"><a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a></nav>
+    <button class="menu" id="menu" aria-label="Toggle navigation">Menu</button>
+  </div></header>
+  <main>
+    <section class="hero" id="home"><canvas id="particles"></canvas><div class="wrap hero-content">
+      <div class="eyebrow">AI • Business Analysis • Digital Transformation</div>
+      <h1>Ganesh Mahendra<br><span>Pathak.</span></h1>
+      <p>AI Consultant and techno-functional professional connecting business needs with practical technology solutions across AI, CRM, ERP, analytics and process improvement.</p>
+      <div class="actions"><a class="btn primary" href="#experience">Explore my experience <span>↗</span></a><a class="btn" href="mailto:pathakganesh09@gmail.com">Contact me</a><a class="btn" href="https://github.com/Pathak-Ganesh" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+      <div class="hero-meta"><span>📍 <b>Pune, India</b></span><span>✉ <b>pathakganesh09@gmail.com</b></span><span>⌘ <b>Business + Technology</b></span></div>
+    </div></section>
+
+    <section id="about"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">01 / Profile</div><h2>Business thinking. Technology delivery.</h2><p>A cross-functional profile built around understanding business problems, translating them into clear requirements, and supporting practical digital solutions.</p></div>
+      <div class="grid">
+        <article class="card about-main reveal"><h3>About me</h3><p>I work at the intersection of business, technology and analytics. My experience spans AI consulting, CRM and ERP implementation, BFSI technology, business analysis, stakeholder coordination and academic program support. I enjoy structuring ambiguous requirements, improving workflows and helping teams turn ideas into usable solutions.</p><p style="margin-top:14px">I am also pursuing doctoral research on the influence of GST on consumer buying behaviour for FMCG goods, with a focus on millennials.</p>
+          <div class="taglist"><span class="tag">AI Consulting</span><span class="tag">Business Analysis</span><span class="tag">CRM / ERP</span><span class="tag">Agile Delivery</span><span class="tag">Analytics</span></div>
+        </article>
+        <aside class="card about-side reveal"><h3>Professional focus</h3><p>Bridging business objectives and technology execution through structured analysis, process design and collaborative delivery.</p><div class="statrow"><div class="stat"><strong>AI</strong><span>Consulting & adoption</span></div><div class="stat"><strong>CRM</strong><span>Solutions & workflows</span></div><div class="stat"><strong>BI</strong><span>Reporting & insights</span></div><div class="stat"><strong>Agile</strong><span>Delivery practices</span></div></div></aside>
+      </div>
+    </div></section>
+
+    <section id="experience"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">02 / Career</div><h2>Professional experience</h2><p>Roles across consulting, BFSI, telecom, academic operations and digital transformation.</p></div>
+      <div class="card reveal"><div class="timeline">
+        <div class="job"><div class="jobtop"><div><h3>AI Consultant</h3><div class="company">SaveEco Energy Pvt. Ltd.</div></div><div class="date">Jun 2026 – Present</div></div><p>Working on AI-led business enablement and digital transformation initiatives, including process and solution design for business operations.</p></div>
+        <div class="job"><div class="jobtop"><div><h3>Executive Assistant to Director | Program Coordinator – CRM Solutions</h3><div class="company">Dr. D. Y. Patil B-School (DPGU)</div></div><div class="date">Oct 2024 – May 2026</div></div><p>Supported director-level coordination and academic operations while coordinating CRM solution-related initiatives.</p></div>
+        <div class="job"><div class="jobtop"><div><h3>Techno-Functional Consultant – BFSI</h3><div class="company">Acidaes Solution Pvt. Ltd. (Client: SBI)</div></div><div class="date">Apr 2024 – Sep 2024</div></div><p>Worked in a techno-functional consulting role in the banking and financial services domain.</p></div>
+        <div class="job"><div class="jobtop"><div><h3>Business Analyst – BFSI</h3><div class="company">Aarav Global Products & Services Pvt. Ltd. (Client: SBI)</div></div><div class="date">Jan 2024 – Mar 2024</div></div><p>Supported business analysis activities for a BFSI client engagement.</p></div>
+        <div class="job"><div class="jobtop"><div><h3>Assistant Manager</h3><div class="company">Reliance Jio Platforms Ltd.</div></div><div class="date">Dec 2021 – Dec 2023</div></div><p>Worked in a business and technology environment supporting operational and cross-functional initiatives.</p></div>
+        <div class="job"><div class="jobtop"><div><h3>Professional Experience</h3><div class="company">Arron Services</div></div><div class="date">Aug 2017 – Nov 2020</div></div><p>Early-career experience building a foundation in business operations and technology-enabled work.</p></div>
+      </div></div>
+    </div></section>
+
+    <section id="skills"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">03 / Capabilities</div><h2>Skills & toolkit</h2><p>A practical mix of business, functional, analytical and delivery capabilities.</p></div>
+      <div class="skillgrid">
+        <article class="card skillbox reveal"><h3>Business & Functional</h3><p>Business analysis, requirements gathering, BRD, FSD, user stories, stakeholder management, process mapping, workflow design, CRM and ERP functional consulting.</p></article>
+        <article class="card skillbox reveal"><h3>Data & Analytics</h3><p>Power BI, Tableau, SQL, Advanced Excel, KPI dashboards, data analysis, data validation, ETL concepts and reporting.</p></article>
+        <article class="card skillbox reveal"><h3>Delivery & Technology</h3><p>Agile, Scrum, JIRA, Confluence, SIT, UAT, regression testing, release coordination, Zoho Creator, Zoho CRM, Zoho Analytics, Python (basic).</p></article>
+      </div>
+      <div class="taglist reveal" style="margin-top:20px"><span class="tag">CSPO</span><span class="tag">CSM</span><span class="tag">IIBA</span><span class="tag">Lean Management</span><span class="tag">Six Sigma</span></div>
+    </div></section>
+
+    <section id="projects"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">04 / Selected work</div><h2>Projects & initiatives</h2><p>Examples of solution design, business process digitisation and analytics work.</p></div>
+      <div class="grid">
+        <article class="card project reveal"><div class="number">PROJECT 01</div><h3>Zoho-based EPC Digital Transformation</h3><p>Contributed to a Zoho ecosystem for EPC operations, bringing project, finance, billing, risk and milestone information into structured workflows and management dashboards.</p><div class="taglist"><span class="tag">Zoho Projects</span><span class="tag">Zoho Creator</span><span class="tag">Zoho Analytics</span></div></article>
+        <article class="card project reveal"><div class="number">PROJECT 02</div><h3>MillNest DesignVault</h3><p>Designed an Engineering module prototype covering material master, purchase requisition, BOQ-to-BOM workflow, engineering deliverables and drawing revision history.</p><div class="taglist"><span class="tag">Process Design</span><span class="tag">Zoho Creator</span><span class="tag">Deluge</span></div></article>
+        <article class="card project reveal"><div class="number">PROJECT 03</div><h3>Analytics & BI Dashboards</h3><p>Dashboard concepts and reporting work focused on translating operational and business data into accessible performance insights.</p><div class="taglist"><span class="tag">Power BI</span><span class="tag">Excel</span><span class="tag">KPIs</span></div></article>
+        <article class="card project reveal"><div class="number">PROJECT 04</div><h3>AI Enablement Initiatives</h3><p>Exploring practical AI adoption, AI-enabled workflows and ways to support business teams with useful, responsible AI solutions.</p><div class="taglist"><span class="tag">AI Adoption</span><span class="tag">Prompting</span><span class="tag">Workflow Design</span></div></article>
+      </div>
+      <p style="color:var(--muted);font-size:.85rem;margin-top:14px">Selected initiatives are summarized at a high level. Detailed case studies and measurable outcomes can be added when approved for public sharing.</p>
+    </div></section>
+
+    <section id="education"><div class="wrap">
+      <div class="section-head reveal"><div class="kicker">05 / Learning</div><h2>Education & research</h2></div>
+      <div class="grid">
+        <article class="card education reveal"><h3>Academic qualifications</h3>
+          <div class="eduitem"><strong>Ph.D. – Research Scholar</strong><span>MGM University, Chhatrapati Sambhajinagar | Pursuing</span></div>
+          <div class="eduitem"><strong>Master of Business Administration (MBA)</strong><span>Ashoka Business School | 2015–2017</span></div>
+          <div class="eduitem"><strong>Bachelor of Computer Applications (BCA)</strong><span>Ashoka Centre for Business and Computer Studies | 2010–2013</span></div>
+        </article>
+        <article class="card education reveal"><h3>Research focus</h3><div class="eduitem"><strong>GST and Consumer Buying Behaviour for FMCG Goods</strong><span>Study among millennials</span></div><p style="margin-top:12px">Research interests include GST, consumer price perception, tax pass-through and the factors shaping FMCG purchase decisions.</p></article>
+      </div>
+    </div></section>
+
+    <section id="contact"><div class="wrap"><div class="contact reveal"><div><div class="kicker">06 / Get in touch</div><h2 style="margin:8px 0 0;font-size:2rem">Let's connect.</h2><p>For professional conversations, collaborations and opportunities.</p></div><div class="contact-links"><a class="btn primary" href="mailto:pathakganesh09@gmail.com">Email me ↗</a><a class="btn" href="https://github.com/Pathak-Ganesh" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap"><span>© <span id="year"></span> Ganesh Mahendra Pathak</span><span>Designed as a lightweight, GitHub Pages-ready portfolio.</span></div></footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/128/three.min.js"></script>
+  <script>
+    // Responsive particle field. Falls back gracefully if WebGL is unavailable.
+    (function(){
+      const canvas=document.getElementById('particles');
+      if(!window.THREE || !canvas) return;
+      try{
+        const scene=new THREE.Scene();
+        const camera=new THREE.PerspectiveCamera(65,1,.1,1000);
+        camera.position.z=75;
+        const renderer=new THREE.WebGLRenderer({canvas,alpha:true,antialias:true});
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+        const count=850, positions=new Float32Array(count*3);
+        for(let i=0;i<count;i++){positions[i*3]=(Math.random()-.5)*150;positions[i*3+1]=(Math.random()-.5)*95;positions[i*3+2]=(Math.random()-.5)*85;}
+        const geometry=new THREE.BufferGeometry();geometry.setAttribute('position',new THREE.BufferAttribute(positions,3));
+        const material=new THREE.PointsMaterial({color:0x75dedb,size:.22,transparent:true,opacity:.75});
+        const points=new THREE.Points(geometry,material);scene.add(points);
+        let mouseX=0,mouseY=0,targetX=0,targetY=0;
+        function resize(){const w=canvas.clientWidth||innerWidth,h=canvas.clientHeight||innerHeight;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
+        window.addEventListener('resize',resize);resize();
+        window.addEventListener('pointermove',e=>{mouseX=(e.clientX/innerWidth-.5)*.5;mouseY=(e.clientY/innerHeight-.5)*.35;},{passive:true});
+        function animate(){requestAnimationFrame(animate);targetX+=(mouseX-targetX)*.025;targetY+=(mouseY-targetY)*.025;points.rotation.y+=.0007+targetX*.001;points.rotation.x+=(targetY-points.rotation.x)*.02;renderer.render(scene,camera);}
+        animate();
+      }catch(e){canvas.style.display='none';}
+    })();
+    const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+    menu.addEventListener('click',()=>nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+    document.getElementById('year').textContent=new Date().getFullYear();
+    const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+    document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
